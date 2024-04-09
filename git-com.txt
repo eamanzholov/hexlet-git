@@ -411,3 +411,38 @@
   411  history >> git-com.txt 
   412  git restore git-com.txt 
   413  history > git-com.txt 
+  414  git add git-com.txt 
+  415  git commit -m 'add new com to git-com'
+  416  echo 'new text' > INFO.md 
+  417  git add INFO.md 
+  418  git status
+  419  git restore --staged INFO.md 
+  420  git status
+  421  git restore INFO.md 
+  422  git status
+  423  git log -p
+  424  git revert b7cc9f0745aa3cb9bbf1cf50ad5758c991e1dc58
+  425  git log -p
+  426  git status
+  427  echo 'test' >> INFO.md 
+  428  git add INFO.md 
+  429  git commit -m 'update INFO.md'
+  430  git status
+  431  git diff
+  432  git diff --staged
+  433  git diff --staged
+  434  git reset --hard HEAD~2
+  435  echo 'no code no pain' > README.md 
+  436  git add README.md 
+  437  git commit -m 'update README.md'
+  438  git reset HEAD~
+  439  git status
+  440  echo 'No code No pain' > README.md 
+  441  git add README.md 
+  442  git commit -m 'update README.md'
+  443  git diff -staged
+  444  git diff --staged
+  445  git diff
+  446  git log -p
+  447  git push
+  448  history > git-com.txt 
