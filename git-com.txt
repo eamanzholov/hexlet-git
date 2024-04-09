@@ -1,0 +1,384 @@
+    1  cd ~/.config/google-chrome/
+    2  rm -rf Singleton*
+    3  cd ~/.config/google-chrome/
+    4  rm -rf Singleton*
+    5  cd src
+    6  Makefile all
+    7  cd cat
+    8  Makefile all
+    9  ls
+   10  Makefile all
+   11  Makefile s21_cat
+   12  make
+   13  ./s21_cat 
+   14  ./s21_cat test1.txt
+   15  ./s21_cat -n test1.txt
+   16  ./s21_cat -n -s test1.txt
+   17  ./s21_cat -n -s test1.txt
+   18  ./s21_cat -b test1.txt
+   19  ./s21_cat -e -v test1.txt
+   20  ./s21_cat -E test1.txt
+   21  ./s21_cat -E test1.txt
+   22  ./s21_cat -n test1.txt
+   23  ./s21_cat -n -s test1.txt
+   24  ./s21_cat -s test1.txt
+   25  ./s21_cat -t -v test1.txt
+   26  ./s21_cat -t test1.txt
+   27  ./s21_cat -T test1.txt
+   28  ./s21_cat -T test2.txt
+   29  ./s21_cat -t -v test1.txt
+   30  ./s21_cat -t -v test2.txt
+   31  ./s21_cat -t -v test3.txt
+   32  ./s21_cat -n -s test3.txt
+   33  ./s21_cat -n -s test5.txt
+   34  ./s21_cat test5.txt
+   35  ./s21_cat test127.txt
+   36  ..
+   37  cd ..
+   38  cd ..
+   39  cd materials/build/
+   40  ./run.sh
+   41  chmod +x run.sh
+   42  ./run.sh
+   43  docker --version
+   44  sudo systemctl status docker
+   45  ssh-keygen
+   46  cat .ssh/id_rsa.pub
+   47  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/yonnrose_student.21_school.ru/C3_SimpleBashUtils-1.git
+   48  git branch develop
+   49  git branch
+   50  cd C3_SimpleBashUtils-1/
+   51  git branch develop
+   52  git branch -b develop
+   53  cd ..
+   54  ls
+   55  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/yonnrose_student.21_school.ru/C3_SimpleBashUtils-1.git
+   56  cd C3_SimpleBashUtils-1/
+   57  git branch develop
+   58  git switch develop
+   59  code .
+   60  git push origin develop
+   61  git branch
+   62  ls
+   63  cd src
+   64  ls
+   65  cd cat
+   66  makefile all
+   67  code .
+   68  cd ..
+   69  cd ..
+   70  code .
+   71  sudo systemctl status docker
+   72  cd materials/build/
+   73  chmod +x run.sh 
+   74  ./run.sh 
+   75  ./test_cat.sh
+   76  ls
+   77  chmod +x test_cat.sh 
+   78  ./test_cat.sh
+   79  valgrind --tool=memcheck --leak-check=yes ./s21_cat 
+   80  clang-format -n cat.c
+   81  clang-format -n fill_options.c
+   82  clang-format -n fill_options.h
+   83  clang-format -n wrong_flags_detection.c
+   84  clang-format -n wrong_flags_detection.h
+   85  chmod +x run.sh 
+   86  ./run.sh 
+   87  cd src/cat/
+   88  make clean
+   89  cat -t test1.txt
+   90  cat -t test1.txt
+   91  cat -t -v test1.txt
+   92  cat -n test1.txt
+   93  cat -b test1.txt
+   94  cat -T test1.txt
+   95  grep -h
+   96  grep --help
+   97  man grep
+   98  man cat
+   99  cd ..
+  100  cd grep/
+  101  make all
+  102  ./s21_grep -s test1.txt
+  103  clang-format -n s21_grep.c
+  104  clang-format -n grep.c
+  105  ./test_grep.sh
+  106  chmod +x test_grep.sh 
+  107  ./test_grep.sh
+  108  chmod +x test_leaks.sh 
+  109  ./test_leaks.sh 
+  110  valgrind --tool=memcheck --leak-check=yes s21_grep 
+  111  valgrind --tool=memcheck --leak-check=yes ./s21_grep 
+  112  make clean
+  113  cd ..
+  114  git status
+  115  git rm cat/test_cat.sh
+  116  git add .clang-format grep/Makefile grep/grep.c grep/grep.h grep/pattern_file.txt grep/s21_grep grep/test1.txt grep/test127.txt grep/test2.txt grep/test3.txt grep/test4.txt grep/test5.txt 
+  117  git status
+  118  git commit -m"grep"
+  119  git push origin develop
+  120  cd grep/
+  121  ./grep -e pattern non_existent_file.txt
+  122  ./s21_grep -e pattern non_existent_file.txt
+  123  ./s21_grep -e "pattern" pattern_file.txt 
+  124  ./s21_grep -e "45" test1.txt 
+  125  ./s21_grep -e "sd" test1.txt 
+  126  ./s21_grep -e -i "Sd" test1.txt 
+  127  ./s21_grep -i -e "Sd" test1.txt 
+  128  ./s21_grep -e "Sd" test1.txt 
+  129  ./s21_grep -n -e test1.txt 
+  130  ./s21_grep -n -e "sd" test1.txt 
+  131  ./s21_grep -n -e " " test1.txt 
+  132  ./s21_grep -c -e "Sd" test1.txt 
+  133  ./s21_grep -f pattern_file.txt test1.txt 
+  134  ./s21_grep -f pattern_file.txt test1.txt 
+  135  ./s21_grep -l -e sd pattern_file.txt test1.txt 
+  136  ./s21_grep -o -e sd test1.txt 
+  137  ./s21_grep -o sd test1.txt 
+  138  ./s21_grep -l sd pattern_file.txt test1.txt 
+  139  ./s21_grep -c "Sd" test1.txt 
+  140  history 
+  141  git status
+  142  cd ..
+  143  cd cat/
+  144  git rm test2.txt test12.txt test3.txt test4.txt test5.txt
+  145  cd ..
+  146  cd grep/
+  147  git rm test2.txt test127.txt test3.txt test4.txt test5.txt
+  148  git status
+  149  git commit -m "changed"
+  150  git push origin develop
+  151  cd ..
+  152  cd cat/
+  153  ./s21_cat -v test1.txt 
+  154  ./s21_cat -v test1.txt 
+  155  ./s21_cat -v test1.txt 
+  156  ./s21_cat -v test1.txt 
+  157  ./s21_cat -n -v test1.txt 
+  158  ./s21_cat -e -v test1.txt 
+  159  ./s21_cat -b test1.txt 
+  160  ./s21_cat -s test1.txt 
+  161  ./s21_cat -t test1.txt 
+  162  ./s21_cat -t -v test1.txt 
+  163  ./s21_cat -t -v test1.txt 
+  164  ./s21_cat -t test1.txt 
+  165  ./s21_cat -T test1.txt 
+  166  ./s21_cat -t test1.txt cd
+  167  cd
+  168  ls
+  169  cd New\ Folder/
+  170  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/lockemin_student.21_school.ru/C3_SimpleBashUtils-2.git
+  171  cd C3_SimpleBashUtils-2/
+  172  git branch develop
+  173  cd src/cat/
+  174  ls
+  175  git branch origin develop
+  176  git branch
+  177  git checkout develop
+  178  ls
+  179  cd ..
+  180  cd ..
+  181  git branch
+  182  cd src/cat/
+  183  ls
+  184  cd
+  185  cd C3_SimpleBashUtils-1/
+  186  git branch
+  187  cd src/cat/
+  188  ls
+  189  ls
+  190  cd src/cat/
+  191  ls
+  192  cd
+  193  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/lockemin_student.21_school.ru/C3_SimpleBashUtils-2.git
+  194  git checkout origin develop
+  195  git checkout develop
+  196  history
+  197  git checkout develop
+  198  git branch
+  199  git branch
+  200  cd C3_SimpleBashUtils-
+  201  cd C3_SimpleBashUtils-2/
+  202  git checkout develop
+  203  git switch develop
+  204  git branch
+  205  cd src/cat/
+  206  ls
+  207  code .
+  208  cd ..
+  209  ls
+  210  code .
+  211  make all
+  212  cd cat/
+  213  ./test_leaks.sh 
+  214  chmod test_leaks.sh 
+  215  chmod +x test_leaks.sh 
+  216  ./test_leaks.sh 
+  217  chmod +x tests.sh 
+  218  ./tests.sh 
+  219  chmod +x ./tests.sh 
+  220  ./tests.sh 
+  221  cd ..
+  222  cd cat/
+  223  chmod +x test_leaks.sh 
+  224  ./test_leaks.sh 
+  225  cd ..
+  226  ./s21_cat -n ./cat/test_files/1.txt
+  227  ./s21_cat -n ./cat/test_files/test_1_cat.txt 
+  228  ./s21_cat -e ./cat/test_files/test_1_cat.txt 
+  229  ./s21_cat -i ./cat/test_files/test_1_cat.txt 
+  230  ./s21_cat -b ./cat/test_files/test_1_cat.txt 
+  231  ./s21_cat -s ./cat/test_files/test_1_cat.txt 
+  232  ./s21_cat -s ./cat/test_files/test_1_cat.txt 
+  233  ./s21_cat -t -v ./cat/test_files/test_1_cat.txt 
+  234  ./s21_cat -T ./cat/test_files/test_1_cat.txt 
+  235  ./s21_grep -i "ips" ./grep/1.txt 
+  236  ./s21_grep -v "ips" ./grep/1.txt 
+  237  ./s21_grep -v ./grep/1.txt 
+  238  ./s21_grep -i -e "ed" ./grep/1.txt 
+  239  ./s21_grep -n -e "ed" ./grep/1.txt 
+  240  ./s21_grep -h "ed" ./grep/1.txt 
+  241  ./s21_grep -s "ed" ./grep/1.txt 
+  242  ./s21_grep -f "ed" ./grep/1.txt 
+  243  ./s21_grep -f ./grep/1.txt 
+  244  ./s21_grep -o "ed" ./grep/1.txt 
+  245  ./s21_grep -o "sunt" ./grep/1.txt 
+  246  chmod +x ./test_leaks.sh 
+  247  ./test_leaks.sh 
+  248  chmod +x test_leaks.sh 
+  249  ./test_leaks.sh 
+  250  make all
+  251  cd cat/
+  252  chmod +x test_leaks.sh 
+  253  ./test_leaks.sh 
+  254  ./test_leaks.sh 
+  255  cd New\ Folder/
+  256  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/vincenzg_student.21_school.ru/C3_SimpleBashUtils-2.git
+  257  cd C3_SimpleBashUtils-2/src/
+  258  git switch develop
+  259  git branch
+  260  ls
+  261  cat Makefile 
+  262  make all
+  263  code .
+  264  cd
+  265  cd New\ Folder/
+  266  mkdir new
+  267  ls
+  268  cd new/
+  269  git clone ssh://git@repos-ssh.21-school.ru:2289/students/C3_SimpleBashUtils.ID_353513/ponosheb_student.21_school.ru/C3_SimpleBashUtils-1.git
+  270  cd C3_SimpleBashUtils-1/
+  271  ls
+  272  git switch develop
+  273  git branch
+  274  cd src/
+  275  code .
+  276  git add .
+  277  git status
+  278  git commit -m "added gitignor"
+  279  git status
+  280  logs
+  281  git log
+  282  git status
+  283  git add .
+  284  git status
+  285  git branch
+  286  git branch test
+  287  git branch
+  288  git branch -D test
+  289  git branch
+  290  git checkout readme
+  291  git branch readme
+  292  git branch
+  293  git checkout readme
+  294  git branch
+  295  git branch main
+  296  git checkout -b new
+  297  git branch
+  298  git branch readme
+  299  git branch
+  300  git checkout readme
+  301  git branch -D new
+  302  git branch
+  303  git status
+  304  git add .
+  305  git commit -m "added readme"
+  306  git status
+  307  git branch 
+  308  git branch main
+  309  git checkout main
+  310  git merge readme
+  311  git status
+  312  git log
+  313  clear
+  314  git branch
+  315  git branch -D readme
+  316  git branch
+  317  git config --global user.name
+  318  cd
+  319  cd C3_SimpleBashUtils-
+  320  cd C3_SimpleBashUtils-1
+  321  git config --global user.name
+  322  git config --global user.email
+  323  cd
+  324  cd hexlet-git/
+  325  git config --global user.name "Yerzhan"
+  326  git config --global user.name
+  327  git config --global user.email "e.amanzholov@gmail.com"
+  328  git config --global user.email
+  329  git status
+  330  git push -u origin main
+  331  cd
+  332  clear
+  333  mkdir new-project-git
+  334  cd new-project-git/
+  335  git clone https://github.com/eamanzholov/hexlet-git.git
+  336  cd hexlet-git/
+  337  ls
+  338  cd hexlet-git/
+  339  ls
+  340  git add .
+  341  git status
+  342  git commit -m "chaged README"
+  343  git push origin main
+  344  cd
+  345  cd hexlet-git/
+  346  ls
+  347  cat README.md 
+  348  git pull
+  349  cat README.md 
+  350  rm NEW.md 
+  351  git status
+  352  git restore NEW.md
+  353  git status
+  354  git rm NEW.md 
+  355  git status
+  356  git commit -m "deleted NEW.md"
+  357  echo "git is awesome!" > INFO.md
+  358  cd
+  359  cd hexlet-git/
+  360  cat INFO.md 
+  361  git status
+  362  git add .
+  363  git status
+  364  git commit -m "added INFO.md"
+  365  git status
+  366  git push
+  367  echo "new line" >> INFO.md 
+  368  echo 'Hello, Hexlet! How are you?' > README.md 
+  369  git status
+  370  git diff
+  371  git diff --staged
+  372  git status
+  373  git add .
+  374  git diff --staged
+  375  git diff
+  376  git commit -m 'add new content'
+  377  git status
+  378  git diff --staged
+  379  git diff
+  380  git push
+  381  git mv --help
+  382  history 
+  383  history -> git-com.txt
+  384  history > git-com.txt
