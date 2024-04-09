@@ -382,3 +382,32 @@
   382  history 
   383  history -> git-com.txt
   384  history > git-com.txt
+  385  git add .gitignore 
+  386  git status
+  387  git push
+  388  git commit -m 'add change gitignor'
+  389  git push
+  390  git status
+  391  git add .
+  392  git status
+  393  git commit -m 'add git-com.txt'
+  394  git push
+  395  git log
+  396  git log -p
+  397  git show b29e34ca718cbfd0976741fced5908b1836f4d39
+  398  git blame INFO.md 
+  399  git grep line
+  400  git grep -i hexlet
+  401  git grep Hexlet b29e34ca718cbfd0976741fced5908b1836f4d39
+  402  git grep Hexlet $(git rev-list --all)
+  403  mkdir one
+  404  touch two
+  405  echo 'new line2' >> INFO.md 
+  406  git status
+  407  git clean -fd
+  408  git status
+  409  git restore INFO.md 
+  410  git status
+  411  history >> git-com.txt 
+  412  git restore git-com.txt 
+  413  history > git-com.txt 
