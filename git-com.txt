@@ -446,3 +446,19 @@
   446  git log -p
   447  git push
   448  history > git-com.txt 
+  449  git add git-com.txt 
+  450  git commit -m 'changed git-com'
+  451  git push
+  452  echo 'experiment with amend' >> INFO.md 
+  453  echo 'experiment with amend' >> README.md 
+  454  git add INFO.md 
+  455  git commit -m 'add content to INFO.md and README.md'
+  456  git status
+  457  git add README.md 
+  458  git commit --amend --no-edit
+  459  git status
+  460  git log
+  461  git log -p
+  462  git log
+  463  git log #
+  464  history > git-com.txt 
